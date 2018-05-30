@@ -1,0 +1,842 @@
+28-May-2018 20:57:36.636 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.29
+28-May-2018 20:57:37.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 5 2018 13:11:12 UTC
+28-May-2018 20:57:37.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.29.0
+28-May-2018 20:57:37.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+28-May-2018 20:57:37.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+28-May-2018 20:57:37.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+28-May-2018 20:57:37.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_144\jre
+28-May-2018 20:57:37.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+28-May-2018 20:57:37.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-May-2018 20:57:37.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:57:37.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:57:37.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\conf\logging.properties
+28-May-2018 20:57:37.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-May-2018 20:57:37.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-May-2018 20:57:37.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-May-2018 20:57:37.105 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+28-May-2018 20:57:37.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:57:37.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:57:37.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\temp
+28-May-2018 20:57:37.107 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+28-May-2018 20:57:37.108 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+28-May-2018 20:57:37.108 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+28-May-2018 20:57:37.876 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+28-May-2018 20:57:38.707 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-500"]
+28-May-2018 20:57:40.005 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-May-2018 20:57:40.060 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 20:57:40.062 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:632)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:309)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:995)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1086)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:268)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:993)
+	... 13 more
+
+28-May-2018 20:57:40.067 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 5451 ms
+28-May-2018 20:57:40.151 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-May-2018 20:57:40.151 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.29
+28-May-2018 20:57:40.163 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\docs]
+28-May-2018 20:57:41.189 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\docs] has finished in [1,025] ms
+28-May-2018 20:57:41.189 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\examples]
+28-May-2018 20:57:42.009 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\examples] has finished in [819] ms
+28-May-2018 20:57:42.009 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\host-manager]
+28-May-2018 20:57:42.042 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\host-manager] has finished in [32] ms
+28-May-2018 20:57:42.042 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\manager]
+28-May-2018 20:57:42.068 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\manager] has finished in [26] ms
+28-May-2018 20:57:42.068 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\ROOT]
+28-May-2018 20:57:42.088 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\ROOT] has finished in [20] ms
+28-May-2018 20:57:42.093 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-500"]
+28-May-2018 20:57:42.105 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2037 ms
+28-May-2018 20:57:42.109 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:440)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:769)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:715)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:353)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:493)
+
+28-May-2018 20:57:42.110 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-500"]
+28-May-2018 20:57:42.283 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 20:57:42.283 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+28-May-2018 20:57:42.358 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-500"]
+28-May-2018 20:57:42.361 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-500"]
+28-May-2018 20:57:42.362 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 20:57:42.362 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 20:57:50.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.29
+28-May-2018 20:57:50.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 5 2018 13:11:12 UTC
+28-May-2018 20:57:50.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.29.0
+28-May-2018 20:57:50.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+28-May-2018 20:57:50.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+28-May-2018 20:57:50.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+28-May-2018 20:57:50.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_144\jre
+28-May-2018 20:57:50.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+28-May-2018 20:57:50.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-May-2018 20:57:50.022 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:57:50.022 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:57:50.022 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\conf\logging.properties
+28-May-2018 20:57:50.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-May-2018 20:57:50.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-May-2018 20:57:50.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-May-2018 20:57:50.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+28-May-2018 20:57:50.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:57:50.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:57:50.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\temp
+28-May-2018 20:57:50.026 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+28-May-2018 20:57:50.027 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+28-May-2018 20:57:50.027 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+28-May-2018 20:57:50.654 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+28-May-2018 20:57:50.782 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-500"]
+28-May-2018 20:57:50.946 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-May-2018 20:57:50.953 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 20:57:50.954 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:632)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:309)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:995)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1086)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:268)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:993)
+	... 13 more
+
+28-May-2018 20:57:50.956 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1262 ms
+28-May-2018 20:57:50.981 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-May-2018 20:57:50.982 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.29
+28-May-2018 20:57:50.991 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\docs]
+28-May-2018 20:57:51.284 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\docs] has finished in [292] ms
+28-May-2018 20:57:51.284 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\examples]
+28-May-2018 20:57:51.548 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\examples] has finished in [264] ms
+28-May-2018 20:57:51.548 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\host-manager]
+28-May-2018 20:57:51.579 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\host-manager] has finished in [31] ms
+28-May-2018 20:57:51.579 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\manager]
+28-May-2018 20:57:51.602 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\manager] has finished in [23] ms
+28-May-2018 20:57:51.603 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\ROOT]
+28-May-2018 20:57:51.621 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\ROOT] has finished in [18] ms
+28-May-2018 20:57:51.624 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-500"]
+28-May-2018 20:57:51.635 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 677 ms
+28-May-2018 20:57:51.638 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:440)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:769)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:715)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:353)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:493)
+
+28-May-2018 20:57:51.638 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-500"]
+28-May-2018 20:57:51.785 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 20:57:51.785 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+28-May-2018 20:57:51.806 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-500"]
+28-May-2018 20:57:51.807 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-500"]
+28-May-2018 20:57:51.808 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 20:57:51.809 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 20:58:36.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.29
+28-May-2018 20:58:36.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 5 2018 13:11:12 UTC
+28-May-2018 20:58:36.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.29.0
+28-May-2018 20:58:36.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+28-May-2018 20:58:36.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+28-May-2018 20:58:36.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+28-May-2018 20:58:36.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_144\jre
+28-May-2018 20:58:36.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+28-May-2018 20:58:36.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-May-2018 20:58:36.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:58:36.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:58:36.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\conf\logging.properties
+28-May-2018 20:58:36.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-May-2018 20:58:36.614 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-May-2018 20:58:36.614 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-May-2018 20:58:36.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+28-May-2018 20:58:36.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:58:36.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 20:58:36.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\temp
+28-May-2018 20:58:36.617 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+28-May-2018 20:58:36.617 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+28-May-2018 20:58:36.618 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+28-May-2018 20:58:37.253 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+28-May-2018 20:58:37.360 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-500"]
+28-May-2018 20:58:37.518 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-May-2018 20:58:37.524 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 20:58:37.527 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-May-2018 20:58:37.528 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1259 ms
+28-May-2018 20:58:37.552 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-May-2018 20:58:37.553 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.29
+28-May-2018 20:58:37.563 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\docs]
+28-May-2018 20:58:37.844 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\docs] has finished in [280] ms
+28-May-2018 20:58:37.844 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\examples]
+28-May-2018 20:58:38.110 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\examples] has finished in [266] ms
+28-May-2018 20:58:38.110 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\host-manager]
+28-May-2018 20:58:38.140 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\host-manager] has finished in [30] ms
+28-May-2018 20:58:38.140 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\manager]
+28-May-2018 20:58:38.164 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\manager] has finished in [24] ms
+28-May-2018 20:58:38.164 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\ROOT]
+28-May-2018 20:58:38.182 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\ROOT] has finished in [18] ms
+28-May-2018 20:58:38.185 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-500"]
+28-May-2018 20:58:38.196 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 20:58:38.199 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 670 ms
+28-May-2018 21:08:09.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.29
+28-May-2018 21:08:09.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 5 2018 13:11:12 UTC
+28-May-2018 21:08:09.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.29.0
+28-May-2018 21:08:09.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+28-May-2018 21:08:09.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+28-May-2018 21:08:09.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+28-May-2018 21:08:09.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_144\jre
+28-May-2018 21:08:09.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+28-May-2018 21:08:09.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-May-2018 21:08:09.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 21:08:09.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 21:08:09.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\conf\logging.properties
+28-May-2018 21:08:09.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-May-2018 21:08:09.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|DESKTOP-KKHKH84
+28-May-2018 21:08:09.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-May-2018 21:08:09.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-May-2018 21:08:09.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+28-May-2018 21:08:09.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 21:08:09.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29
+28-May-2018 21:08:09.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\temp
+28-May-2018 21:08:09.642 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+28-May-2018 21:08:09.642 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+28-May-2018 21:08:09.642 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+28-May-2018 21:08:10.352 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+28-May-2018 21:08:11.069 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-500"]
+28-May-2018 21:08:11.437 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-May-2018 21:08:11.464 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 21:08:11.467 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-May-2018 21:08:11.467 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3131 ms
+28-May-2018 21:08:11.582 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-May-2018 21:08:11.582 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.29
+28-May-2018 21:08:11.663 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\docs]
+28-May-2018 21:08:12.723 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\docs] has finished in [1,060] ms
+28-May-2018 21:08:12.723 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\examples]
+28-May-2018 21:08:15.733 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\examples] has finished in [3,010] ms
+28-May-2018 21:08:15.733 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\host-manager]
+28-May-2018 21:08:15.956 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\host-manager] has finished in [223] ms
+28-May-2018 21:08:15.956 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\manager]
+28-May-2018 21:08:16.040 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\manager] has finished in [84] ms
+28-May-2018 21:08:16.041 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\ROOT]
+28-May-2018 21:08:16.110 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\webapps\ROOT] has finished in [68] ms
+28-May-2018 21:08:16.114 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-500"]
+28-May-2018 21:08:16.125 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 21:08:16.129 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 4661 ms
+28-May-2018 21:08:59.605 INFO [http-nio-500-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\conf\Catalina\localhost\springWebMvc.xml]
+28-May-2018 21:09:03.324 INFO [http-nio-500-exec-4] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:09:03.397 INFO [http-nio-500-exec-4] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:09:03.646 INFO [http-nio-500-exec-4] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:09:03 ICT 2018]; root of context hierarchy
+28-May-2018 21:09:03.764 INFO [http-nio-500-exec-4] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:09:04.793 INFO [http-nio-500-exec-4] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1396 ms
+28-May-2018 21:09:04.899 INFO [http-nio-500-exec-4] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:09:04.907 INFO [http-nio-500-exec-4] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:09:04 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:09:04.909 INFO [http-nio-500-exec-4] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:09:05.243 INFO [http-nio-500-exec-4] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/index] onto handler 'indexController'
+28-May-2018 21:09:07.466 INFO [http-nio-500-exec-4] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 2567 ms
+28-May-2018 21:09:07.470 INFO [http-nio-500-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\conf\Catalina\localhost\springWebMvc.xml] has finished in [7,865] ms
+28-May-2018 21:09:08.663 INFO [http-nio-500-exec-5] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/springWebMvc]] after start() had already been called. The second call will be ignored.
+28-May-2018 21:12:44.210 INFO [http-nio-500-exec-5] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:12:44.221 INFO [http-nio-500-exec-5] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:09:04 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:12:44.292 INFO [http-nio-500-exec-5] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:09:03 ICT 2018]; root of context hierarchy
+28-May-2018 21:12:51.617 INFO [http-nio-500-exec-5] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:12:51.655 INFO [http-nio-500-exec-5] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:12:51.802 INFO [http-nio-500-exec-5] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:12:51 ICT 2018]; root of context hierarchy
+28-May-2018 21:12:51.868 INFO [http-nio-500-exec-5] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:12:51.970 INFO [http-nio-500-exec-5] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 315 ms
+28-May-2018 21:12:52.015 INFO [http-nio-500-exec-5] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:12:52.019 INFO [http-nio-500-exec-5] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:12:52 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:12:52.021 INFO [http-nio-500-exec-5] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:12:52.208 INFO [http-nio-500-exec-5] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/index] onto handler 'indexController'
+28-May-2018 21:12:52.328 INFO [http-nio-500-exec-5] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 313 ms
+28-May-2018 21:12:52.331 INFO [http-nio-500-exec-5] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:12:52.498 INFO [http-nio-500-exec-7] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:12:52.499 INFO [http-nio-500-exec-7] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:12:52 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:12:52.503 INFO [http-nio-500-exec-7] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:12:51 ICT 2018]; root of context hierarchy
+28-May-2018 21:12:54.825 INFO [http-nio-500-exec-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:12:54.908 INFO [http-nio-500-exec-7] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:12:55.248 INFO [http-nio-500-exec-7] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:12:55 ICT 2018]; root of context hierarchy
+28-May-2018 21:12:55.374 INFO [http-nio-500-exec-7] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:12:55.529 INFO [http-nio-500-exec-7] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 621 ms
+28-May-2018 21:12:55.582 INFO [http-nio-500-exec-7] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:12:55.593 INFO [http-nio-500-exec-7] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:12:55 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:12:55.596 INFO [http-nio-500-exec-7] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:12:55.838 INFO [http-nio-500-exec-7] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/index] onto handler 'indexController'
+28-May-2018 21:12:55.960 INFO [http-nio-500-exec-7] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 378 ms
+28-May-2018 21:12:55.963 INFO [http-nio-500-exec-7] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:15:44.661 INFO [http-nio-500-exec-17] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:15:44.664 INFO [http-nio-500-exec-17] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:12:55 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:15:44.667 INFO [http-nio-500-exec-17] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:12:55 ICT 2018]; root of context hierarchy
+28-May-2018 21:15:46.456 INFO [http-nio-500-exec-17] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:15:46.497 INFO [http-nio-500-exec-17] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:15:46.631 INFO [http-nio-500-exec-17] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:15:46 ICT 2018]; root of context hierarchy
+28-May-2018 21:15:46.694 INFO [http-nio-500-exec-17] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:15:46.772 INFO [http-nio-500-exec-17] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 275 ms
+28-May-2018 21:15:46.795 INFO [http-nio-500-exec-17] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:15:46.801 INFO [http-nio-500-exec-17] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:15:46 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:15:46.802 INFO [http-nio-500-exec-17] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:15:46.938 INFO [http-nio-500-exec-17] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/index] onto handler 'indexController'
+28-May-2018 21:15:47.019 INFO [http-nio-500-exec-17] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 223 ms
+28-May-2018 21:15:47.023 INFO [http-nio-500-exec-17] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:16:49.041 INFO [http-nio-500-exec-8] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:16:49.043 INFO [http-nio-500-exec-8] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:15:46 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:16:49.046 INFO [http-nio-500-exec-8] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:15:46 ICT 2018]; root of context hierarchy
+28-May-2018 21:16:50.992 INFO [http-nio-500-exec-8] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:16:51.039 INFO [http-nio-500-exec-8] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:16:51.197 INFO [http-nio-500-exec-8] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:16:51 ICT 2018]; root of context hierarchy
+28-May-2018 21:16:51.274 INFO [http-nio-500-exec-8] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:16:51.355 INFO [http-nio-500-exec-8] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 316 ms
+28-May-2018 21:16:51.386 INFO [http-nio-500-exec-8] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:16:51.391 INFO [http-nio-500-exec-8] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:16:51 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:16:51.392 INFO [http-nio-500-exec-8] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:16:51.518 INFO [http-nio-500-exec-8] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/index] onto handler 'indexController'
+28-May-2018 21:16:51.589 INFO [http-nio-500-exec-8] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 203 ms
+28-May-2018 21:16:51.592 INFO [http-nio-500-exec-8] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:16:54.265 WARNING [http-nio-500-exec-1] org.springframework.web.servlet.DispatcherServlet.noHandlerFound No mapping found for HTTP request with URI [/springWebMvc/home/index] in DispatcherServlet with name 'dispatcher'
+28-May-2018 21:19:35.912 INFO [http-nio-500-exec-22] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:19:35.915 INFO [http-nio-500-exec-22] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:16:51 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:19:35.919 INFO [http-nio-500-exec-22] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:16:51 ICT 2018]; root of context hierarchy
+28-May-2018 21:19:37.868 INFO [http-nio-500-exec-22] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:19:37.910 INFO [http-nio-500-exec-22] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:19:38.050 INFO [http-nio-500-exec-22] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:19:38 ICT 2018]; root of context hierarchy
+28-May-2018 21:19:38.120 INFO [http-nio-500-exec-22] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:19:38.205 INFO [http-nio-500-exec-22] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 295 ms
+28-May-2018 21:19:38.231 INFO [http-nio-500-exec-22] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:19:38.236 INFO [http-nio-500-exec-22] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:19:38 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:19:38.238 INFO [http-nio-500-exec-22] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:19:38.367 INFO [http-nio-500-exec-22] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/index] onto handler 'indexController'
+28-May-2018 21:19:38.440 INFO [http-nio-500-exec-22] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 208 ms
+28-May-2018 21:19:38.445 INFO [http-nio-500-exec-22] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:19:42.987 INFO [http-nio-500-exec-32] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:19:42.989 INFO [http-nio-500-exec-32] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:19:38 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:19:42.993 INFO [http-nio-500-exec-32] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:19:38 ICT 2018]; root of context hierarchy
+28-May-2018 21:19:44.515 INFO [http-nio-500-exec-32] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:19:44.551 INFO [http-nio-500-exec-32] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:19:44.682 INFO [http-nio-500-exec-32] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:19:44 ICT 2018]; root of context hierarchy
+28-May-2018 21:19:44.755 INFO [http-nio-500-exec-32] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:19:44.829 INFO [http-nio-500-exec-32] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 278 ms
+28-May-2018 21:19:44.850 INFO [http-nio-500-exec-32] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:19:44.855 INFO [http-nio-500-exec-32] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:19:44 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:19:44.856 INFO [http-nio-500-exec-32] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:19:45.002 INFO [http-nio-500-exec-32] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/index] onto handler 'indexController'
+28-May-2018 21:19:45.068 INFO [http-nio-500-exec-32] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 218 ms
+28-May-2018 21:19:45.070 INFO [http-nio-500-exec-32] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:19:45.729 WARNING [http-nio-500-exec-33] org.springframework.web.servlet.DispatcherServlet.noHandlerFound No mapping found for HTTP request with URI [/springWebMvc/home/index] in DispatcherServlet with name 'dispatcher'
+28-May-2018 21:21:44.187 INFO [http-nio-500-exec-35] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:19:44 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:21:44.190 INFO [http-nio-500-exec-35] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:19:44 ICT 2018]; root of context hierarchy
+28-May-2018 21:21:45.972 INFO [http-nio-500-exec-38] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:21:46.009 INFO [http-nio-500-exec-38] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:21:46.146 INFO [http-nio-500-exec-38] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:21:46 ICT 2018]; root of context hierarchy
+28-May-2018 21:21:46.212 INFO [http-nio-500-exec-38] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:21:46.285 INFO [http-nio-500-exec-38] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 276 ms
+28-May-2018 21:21:46.313 INFO [http-nio-500-exec-38] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:21:46.318 INFO [http-nio-500-exec-38] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:21:46 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:21:46.320 INFO [http-nio-500-exec-38] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:21:46.490 INFO [http-nio-500-exec-38] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/index] onto handler 'indexController'
+28-May-2018 21:21:46.574 INFO [http-nio-500-exec-38] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 261 ms
+28-May-2018 21:21:47.007 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/springWebMvc]
+28-May-2018 21:21:47.007 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:21:47.010 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:21:46 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:21:47.013 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:21:46 ICT 2018]; root of context hierarchy
+28-May-2018 21:21:48.686 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:21:48.726 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:21:48.895 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:21:48 ICT 2018]; root of context hierarchy
+28-May-2018 21:21:48.961 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:21:49.034 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 307 ms
+28-May-2018 21:21:49.066 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:21:49.070 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:21:49 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:21:49.071 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:21:49.230 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/index] onto handler 'indexController'
+28-May-2018 21:21:49.301 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 235 ms
+28-May-2018 21:21:49.304 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:22:31.489 INFO [http-nio-500-exec-42] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:21:49 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:22:31.922 INFO [http-nio-500-exec-42] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:21:48 ICT 2018]; root of context hierarchy
+28-May-2018 21:22:33.725 INFO [http-nio-500-exec-37] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:22:33.766 INFO [http-nio-500-exec-37] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:22:33.908 INFO [http-nio-500-exec-37] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:22:33 ICT 2018]; root of context hierarchy
+28-May-2018 21:22:33.973 INFO [http-nio-500-exec-37] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:22:34.057 INFO [http-nio-500-exec-37] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 291 ms
+28-May-2018 21:22:34.082 INFO [http-nio-500-exec-37] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:22:34.087 INFO [http-nio-500-exec-37] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:22:34 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:22:34.089 INFO [http-nio-500-exec-37] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:22:34.556 INFO [http-nio-500-exec-37] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:22:34.556 INFO [http-nio-500-exec-37] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:22:34.557 INFO [http-nio-500-exec-37] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:22:34.677 INFO [http-nio-500-exec-37] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 594 ms
+28-May-2018 21:22:41.978 INFO [http-nio-500-exec-41] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:22:34 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:22:42.031 INFO [http-nio-500-exec-41] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:22:33 ICT 2018]; root of context hierarchy
+28-May-2018 21:22:42.540 INFO [http-nio-500-exec-41] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/springWebMvc]
+28-May-2018 21:22:55.554 INFO [http-nio-500-exec-39] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\conf\Catalina\localhost\springWebMvc.xml]
+28-May-2018 21:22:57.538 INFO [http-nio-500-exec-39] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:22:57.584 INFO [http-nio-500-exec-39] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:22:57.718 INFO [http-nio-500-exec-39] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:22:57 ICT 2018]; root of context hierarchy
+28-May-2018 21:22:57.789 INFO [http-nio-500-exec-39] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:22:57.879 INFO [http-nio-500-exec-39] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 295 ms
+28-May-2018 21:22:57.907 INFO [http-nio-500-exec-39] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:22:57.912 INFO [http-nio-500-exec-39] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:22:57 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:22:57.914 INFO [http-nio-500-exec-39] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:22:58.240 INFO [http-nio-500-exec-39] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:22:58.240 INFO [http-nio-500-exec-39] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:22:58.241 INFO [http-nio-500-exec-39] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:22:58.357 INFO [http-nio-500-exec-39] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 450 ms
+28-May-2018 21:22:58.362 INFO [http-nio-500-exec-39] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\Rio.Rai\Desktop\spring-web-mvc\apache-tomcat-8.5.29\conf\Catalina\localhost\springWebMvc.xml] has finished in [2,807] ms
+28-May-2018 21:22:58.368 INFO [http-nio-500-exec-40] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/springWebMvc]] after start() had already been called. The second call will be ignored.
+28-May-2018 21:23:28.040 INFO [http-nio-500-exec-47] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:23:28.043 INFO [http-nio-500-exec-47] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:22:57 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:23:28.087 INFO [http-nio-500-exec-47] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:22:57 ICT 2018]; root of context hierarchy
+28-May-2018 21:23:29.914 INFO [http-nio-500-exec-47] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:23:29.974 INFO [http-nio-500-exec-47] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:23:30.222 INFO [http-nio-500-exec-47] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:23:30 ICT 2018]; root of context hierarchy
+28-May-2018 21:23:30.364 INFO [http-nio-500-exec-47] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:23:30.502 INFO [http-nio-500-exec-47] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 528 ms
+28-May-2018 21:23:30.577 INFO [http-nio-500-exec-47] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:23:30.584 INFO [http-nio-500-exec-47] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:23:30 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:23:30.587 INFO [http-nio-500-exec-47] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:23:31.172 INFO [http-nio-500-exec-47] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:23:31.173 INFO [http-nio-500-exec-47] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:23:31.173 INFO [http-nio-500-exec-47] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:23:31.359 INFO [http-nio-500-exec-47] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 782 ms
+28-May-2018 21:23:31.363 INFO [http-nio-500-exec-47] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:23:34.302 INFO [http-nio-500-exec-48] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:23:34.305 INFO [http-nio-500-exec-48] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:23:30 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:23:34.340 INFO [http-nio-500-exec-48] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:23:30 ICT 2018]; root of context hierarchy
+28-May-2018 21:23:36.063 INFO [http-nio-500-exec-48] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:23:36.105 INFO [http-nio-500-exec-48] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:23:36.242 INFO [http-nio-500-exec-48] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:23:36 ICT 2018]; root of context hierarchy
+28-May-2018 21:23:36.309 INFO [http-nio-500-exec-48] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:23:36.389 INFO [http-nio-500-exec-48] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 284 ms
+28-May-2018 21:23:36.413 INFO [http-nio-500-exec-48] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:23:36.421 INFO [http-nio-500-exec-48] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:23:36 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:23:36.422 INFO [http-nio-500-exec-48] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:23:36.751 INFO [http-nio-500-exec-48] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:23:36.751 INFO [http-nio-500-exec-48] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:23:36.751 INFO [http-nio-500-exec-48] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:23:36.858 INFO [http-nio-500-exec-48] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 445 ms
+28-May-2018 21:23:36.862 INFO [http-nio-500-exec-48] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:27:54.290 INFO [http-nio-500-exec-55] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:27:54.295 INFO [http-nio-500-exec-55] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:23:36 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:27:55.219 INFO [http-nio-500-exec-55] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:23:36 ICT 2018]; root of context hierarchy
+28-May-2018 21:27:59.847 INFO [http-nio-500-exec-55] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:27:59.888 INFO [http-nio-500-exec-55] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:28:00.028 INFO [http-nio-500-exec-55] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:28:00 ICT 2018]; root of context hierarchy
+28-May-2018 21:28:00.108 INFO [http-nio-500-exec-55] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:28:00.228 INFO [http-nio-500-exec-55] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 340 ms
+28-May-2018 21:28:00.252 INFO [http-nio-500-exec-55] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:28:00.256 INFO [http-nio-500-exec-55] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:28:00 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:28:00.258 INFO [http-nio-500-exec-55] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:28:00.565 INFO [http-nio-500-exec-55] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:28:00.566 INFO [http-nio-500-exec-55] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:28:00.566 INFO [http-nio-500-exec-55] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:28:00.674 INFO [http-nio-500-exec-55] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 422 ms
+28-May-2018 21:28:00.678 INFO [http-nio-500-exec-55] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:30:34.746 INFO [http-nio-500-exec-65] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:30:34.747 INFO [http-nio-500-exec-65] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:28:00 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:30:34.780 INFO [http-nio-500-exec-65] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:28:00 ICT 2018]; root of context hierarchy
+28-May-2018 21:30:36.647 INFO [http-nio-500-exec-65] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:30:36.693 INFO [http-nio-500-exec-65] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:30:36.844 INFO [http-nio-500-exec-65] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:30:36 ICT 2018]; root of context hierarchy
+28-May-2018 21:30:36.914 INFO [http-nio-500-exec-65] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:30:36.996 INFO [http-nio-500-exec-65] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 303 ms
+28-May-2018 21:30:37.022 INFO [http-nio-500-exec-65] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:30:37.028 INFO [http-nio-500-exec-65] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:30:37 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:30:37.030 INFO [http-nio-500-exec-65] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:30:37.335 INFO [http-nio-500-exec-65] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:30:37.336 INFO [http-nio-500-exec-65] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:30:37.336 INFO [http-nio-500-exec-65] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:30:37.336 INFO [http-nio-500-exec-65] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:30:37.336 INFO [http-nio-500-exec-65] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:30:37.336 INFO [http-nio-500-exec-65] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:30:37.512 INFO [http-nio-500-exec-65] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 490 ms
+28-May-2018 21:30:37.523 INFO [http-nio-500-exec-65] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:34:12.157 INFO [http-nio-500-exec-76] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:34:12.160 INFO [http-nio-500-exec-76] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:30:37 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:34:12.207 INFO [http-nio-500-exec-76] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:30:36 ICT 2018]; root of context hierarchy
+28-May-2018 21:34:14.154 INFO [http-nio-500-exec-76] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:34:14.208 INFO [http-nio-500-exec-76] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:34:14.344 INFO [http-nio-500-exec-76] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:34:14 ICT 2018]; root of context hierarchy
+28-May-2018 21:34:14.419 INFO [http-nio-500-exec-76] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:34:14.523 INFO [http-nio-500-exec-76] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 314 ms
+28-May-2018 21:34:14.553 INFO [http-nio-500-exec-76] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:34:14.558 INFO [http-nio-500-exec-76] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:34:14 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:34:14.560 INFO [http-nio-500-exec-76] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:34:14.917 INFO [http-nio-500-exec-76] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:34:14.917 INFO [http-nio-500-exec-76] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:34:14.917 INFO [http-nio-500-exec-76] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:34:14.917 INFO [http-nio-500-exec-76] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:34:14.917 INFO [http-nio-500-exec-76] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:34:14.918 INFO [http-nio-500-exec-76] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:34:15.038 INFO [http-nio-500-exec-76] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 485 ms
+28-May-2018 21:34:15.042 INFO [http-nio-500-exec-76] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:36:28.499 INFO [http-nio-500-exec-80] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:36:28.503 INFO [http-nio-500-exec-80] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:34:14 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:36:28.619 INFO [http-nio-500-exec-80] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:34:14 ICT 2018]; root of context hierarchy
+28-May-2018 21:36:35.626 INFO [http-nio-500-exec-80] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:36:35.669 INFO [http-nio-500-exec-80] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:36:35.818 INFO [http-nio-500-exec-80] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:36:35 ICT 2018]; root of context hierarchy
+28-May-2018 21:36:35.887 INFO [http-nio-500-exec-80] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:36:36.042 INFO [http-nio-500-exec-80] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 372 ms
+28-May-2018 21:36:36.067 INFO [http-nio-500-exec-80] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:36:36.078 INFO [http-nio-500-exec-80] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:36:36 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:36:36.079 INFO [http-nio-500-exec-80] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:36:36.502 INFO [http-nio-500-exec-80] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:36:36.502 INFO [http-nio-500-exec-80] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:36:36.503 INFO [http-nio-500-exec-80] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:36:36.503 INFO [http-nio-500-exec-80] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:36:36.503 INFO [http-nio-500-exec-80] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:36:36.503 INFO [http-nio-500-exec-80] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:36:36.677 INFO [http-nio-500-exec-80] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 610 ms
+28-May-2018 21:36:36.680 INFO [http-nio-500-exec-80] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:36:36.733 INFO [http-nio-500-exec-79] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:36:36.735 INFO [http-nio-500-exec-79] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:36:36 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:36:36.779 INFO [http-nio-500-exec-79] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:36:35 ICT 2018]; root of context hierarchy
+28-May-2018 21:36:38.405 INFO [http-nio-500-exec-79] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:36:38.444 INFO [http-nio-500-exec-79] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:36:38.587 INFO [http-nio-500-exec-79] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:36:38 ICT 2018]; root of context hierarchy
+28-May-2018 21:36:38.655 INFO [http-nio-500-exec-79] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:36:38.731 INFO [http-nio-500-exec-79] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 287 ms
+28-May-2018 21:36:38.755 INFO [http-nio-500-exec-79] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:36:38.760 INFO [http-nio-500-exec-79] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:36:38 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:36:38.761 INFO [http-nio-500-exec-79] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:36:39.098 INFO [http-nio-500-exec-79] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:36:39.098 INFO [http-nio-500-exec-79] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:36:39.099 INFO [http-nio-500-exec-79] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:36:39.099 INFO [http-nio-500-exec-79] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:36:39.099 INFO [http-nio-500-exec-79] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:36:39.099 INFO [http-nio-500-exec-79] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:36:39.224 INFO [http-nio-500-exec-79] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 469 ms
+28-May-2018 21:36:39.227 INFO [http-nio-500-exec-79] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:40:35.713 INFO [http-nio-500-exec-91] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:40:35.715 INFO [http-nio-500-exec-91] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:36:38 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:40:35.753 INFO [http-nio-500-exec-91] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:36:38 ICT 2018]; root of context hierarchy
+28-May-2018 21:40:37.674 INFO [http-nio-500-exec-91] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:40:37.731 INFO [http-nio-500-exec-91] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:40:37.878 INFO [http-nio-500-exec-91] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:40:37 ICT 2018]; root of context hierarchy
+28-May-2018 21:40:37.948 INFO [http-nio-500-exec-91] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:40:38.040 INFO [http-nio-500-exec-91] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 308 ms
+28-May-2018 21:40:38.074 INFO [http-nio-500-exec-91] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:40:38.084 INFO [http-nio-500-exec-91] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:40:38 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:40:38.086 INFO [http-nio-500-exec-91] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:40:38.487 INFO [http-nio-500-exec-91] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:40:38.487 INFO [http-nio-500-exec-91] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:40:38.487 INFO [http-nio-500-exec-91] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:40:38.488 INFO [http-nio-500-exec-91] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:40:38.488 INFO [http-nio-500-exec-91] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:40:38.488 INFO [http-nio-500-exec-91] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:40:38.614 INFO [http-nio-500-exec-91] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 540 ms
+28-May-2018 21:40:38.617 INFO [http-nio-500-exec-91] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:40:57.690 INFO [http-nio-500-exec-95] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:40:57.693 INFO [http-nio-500-exec-95] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:40:38 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:40:57.725 INFO [http-nio-500-exec-95] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:40:37 ICT 2018]; root of context hierarchy
+28-May-2018 21:41:00.078 INFO [http-nio-500-exec-95] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:41:00.137 INFO [http-nio-500-exec-95] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:41:00.274 INFO [http-nio-500-exec-95] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:41:00 ICT 2018]; root of context hierarchy
+28-May-2018 21:41:00.359 INFO [http-nio-500-exec-95] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:41:00.433 INFO [http-nio-500-exec-95] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 295 ms
+28-May-2018 21:41:00.454 INFO [http-nio-500-exec-95] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:41:00.459 INFO [http-nio-500-exec-95] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:41:00 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:41:00.460 INFO [http-nio-500-exec-95] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:41:00.810 INFO [http-nio-500-exec-95] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:41:00.810 INFO [http-nio-500-exec-95] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:41:00.810 INFO [http-nio-500-exec-95] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:41:00.810 INFO [http-nio-500-exec-95] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:41:00.810 INFO [http-nio-500-exec-95] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:41:00.811 INFO [http-nio-500-exec-95] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:41:00.916 INFO [http-nio-500-exec-95] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 462 ms
+28-May-2018 21:41:00.919 INFO [http-nio-500-exec-95] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:41:02.517 INFO [http-nio-500-exec-97] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:41:02.519 INFO [http-nio-500-exec-97] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:41:00 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:41:02.565 INFO [http-nio-500-exec-97] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:41:00 ICT 2018]; root of context hierarchy
+28-May-2018 21:41:04.392 INFO [http-nio-500-exec-97] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:41:04.433 INFO [http-nio-500-exec-97] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:41:04.566 INFO [http-nio-500-exec-97] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:41:04 ICT 2018]; root of context hierarchy
+28-May-2018 21:41:04.633 INFO [http-nio-500-exec-97] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:41:04.713 INFO [http-nio-500-exec-97] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 280 ms
+28-May-2018 21:41:04.736 INFO [http-nio-500-exec-97] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:41:04.741 INFO [http-nio-500-exec-97] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:41:04 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:41:04.742 INFO [http-nio-500-exec-97] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:41:05.060 INFO [http-nio-500-exec-97] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:41:05.060 INFO [http-nio-500-exec-97] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:41:05.060 INFO [http-nio-500-exec-97] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:41:05.061 INFO [http-nio-500-exec-97] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:41:05.061 INFO [http-nio-500-exec-97] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:41:05.061 INFO [http-nio-500-exec-97] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:41:05.168 INFO [http-nio-500-exec-97] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 432 ms
+28-May-2018 21:41:05.171 INFO [http-nio-500-exec-97] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:42:14.351 INFO [http-nio-500-exec-100] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:42:14.353 INFO [http-nio-500-exec-100] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:41:04 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:42:14.417 INFO [http-nio-500-exec-100] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:41:04 ICT 2018]; root of context hierarchy
+28-May-2018 21:42:16.728 INFO [http-nio-500-exec-100] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:42:16.797 INFO [http-nio-500-exec-100] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:42:17.062 INFO [http-nio-500-exec-100] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:42:17 ICT 2018]; root of context hierarchy
+28-May-2018 21:42:17.149 INFO [http-nio-500-exec-100] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:42:17.223 INFO [http-nio-500-exec-100] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 425 ms
+28-May-2018 21:42:17.245 INFO [http-nio-500-exec-100] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:42:17.254 INFO [http-nio-500-exec-100] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:42:17 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:42:17.256 INFO [http-nio-500-exec-100] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:42:17.577 INFO [http-nio-500-exec-100] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:42:17.577 INFO [http-nio-500-exec-100] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:42:17.578 INFO [http-nio-500-exec-100] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:42:17.578 INFO [http-nio-500-exec-100] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:42:17.578 INFO [http-nio-500-exec-100] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:42:17.578 INFO [http-nio-500-exec-100] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:42:17.851 INFO [http-nio-500-exec-100] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 605 ms
+28-May-2018 21:42:17.860 INFO [http-nio-500-exec-100] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:42:17.923 INFO [http-nio-500-exec-94] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:42:17.928 INFO [http-nio-500-exec-94] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:42:17 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:42:18.001 INFO [http-nio-500-exec-94] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:42:17 ICT 2018]; root of context hierarchy
+28-May-2018 21:42:20.122 INFO [http-nio-500-exec-94] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:42:20.165 INFO [http-nio-500-exec-94] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:42:20.296 INFO [http-nio-500-exec-94] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:42:20 ICT 2018]; root of context hierarchy
+28-May-2018 21:42:20.370 INFO [http-nio-500-exec-94] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:42:20.446 INFO [http-nio-500-exec-94] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 281 ms
+28-May-2018 21:42:20.479 INFO [http-nio-500-exec-94] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:42:20.483 INFO [http-nio-500-exec-94] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:42:20 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:42:20.484 INFO [http-nio-500-exec-94] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:42:20.794 INFO [http-nio-500-exec-94] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:42:20.795 INFO [http-nio-500-exec-94] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:42:20.795 INFO [http-nio-500-exec-94] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:42:20.795 INFO [http-nio-500-exec-94] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:42:20.795 INFO [http-nio-500-exec-94] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:42:20.796 INFO [http-nio-500-exec-94] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:42:20.901 INFO [http-nio-500-exec-94] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 422 ms
+28-May-2018 21:42:20.904 INFO [http-nio-500-exec-94] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:58:04.665 INFO [http-nio-500-exec-106] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:58:04.671 INFO [http-nio-500-exec-106] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:42:20 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:58:06.034 INFO [http-nio-500-exec-106] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:42:20 ICT 2018]; root of context hierarchy
+28-May-2018 21:58:12.125 INFO [http-nio-500-exec-106] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:58:12.326 INFO [http-nio-500-exec-106] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:58:12.512 INFO [http-nio-500-exec-106] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:58:12 ICT 2018]; root of context hierarchy
+28-May-2018 21:58:12.597 INFO [http-nio-500-exec-106] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:58:12.888 INFO [http-nio-500-exec-106] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 562 ms
+28-May-2018 21:58:12.916 INFO [http-nio-500-exec-106] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:58:12.920 INFO [http-nio-500-exec-106] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:58:12 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:58:12.922 INFO [http-nio-500-exec-106] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:58:13.573 INFO [http-nio-500-exec-106] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:58:13.573 INFO [http-nio-500-exec-106] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:58:13.574 INFO [http-nio-500-exec-106] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:58:13.574 INFO [http-nio-500-exec-106] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:58:13.574 INFO [http-nio-500-exec-106] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:58:13.574 INFO [http-nio-500-exec-106] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:58:13.719 INFO [http-nio-500-exec-106] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 803 ms
+28-May-2018 21:58:13.722 INFO [http-nio-500-exec-106] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:58:13.767 INFO [http-nio-500-exec-110] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:58:13.768 INFO [http-nio-500-exec-110] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:58:12 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:58:13.802 INFO [http-nio-500-exec-110] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:58:12 ICT 2018]; root of context hierarchy
+28-May-2018 21:58:15.804 INFO [http-nio-500-exec-110] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:58:15.855 INFO [http-nio-500-exec-110] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:58:16.011 INFO [http-nio-500-exec-110] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:58:16 ICT 2018]; root of context hierarchy
+28-May-2018 21:58:16.090 INFO [http-nio-500-exec-110] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:58:16.174 INFO [http-nio-500-exec-110] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 319 ms
+28-May-2018 21:58:16.200 INFO [http-nio-500-exec-110] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:58:16.209 INFO [http-nio-500-exec-110] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:58:16 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:58:16.211 INFO [http-nio-500-exec-110] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:58:16.558 INFO [http-nio-500-exec-110] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:58:16.558 INFO [http-nio-500-exec-110] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:58:16.559 INFO [http-nio-500-exec-110] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:58:16.559 INFO [http-nio-500-exec-110] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:58:16.559 INFO [http-nio-500-exec-110] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:58:16.560 INFO [http-nio-500-exec-110] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:58:16.677 INFO [http-nio-500-exec-110] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 477 ms
+28-May-2018 21:58:16.679 INFO [http-nio-500-exec-110] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:59:02.706 INFO [http-nio-500-exec-112] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:59:02.709 INFO [http-nio-500-exec-112] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:58:16 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:59:02.775 INFO [http-nio-500-exec-112] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:58:16 ICT 2018]; root of context hierarchy
+28-May-2018 21:59:04.960 INFO [http-nio-500-exec-112] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:59:05.014 INFO [http-nio-500-exec-112] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:59:05.234 INFO [http-nio-500-exec-112] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:59:05 ICT 2018]; root of context hierarchy
+28-May-2018 21:59:05.327 INFO [http-nio-500-exec-112] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:59:05.433 INFO [http-nio-500-exec-112] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 419 ms
+28-May-2018 21:59:05.465 INFO [http-nio-500-exec-112] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:59:05.472 INFO [http-nio-500-exec-112] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:59:05 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:59:05.473 INFO [http-nio-500-exec-112] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:59:05.823 INFO [http-nio-500-exec-112] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:59:05.823 INFO [http-nio-500-exec-112] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:59:05.824 INFO [http-nio-500-exec-112] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:59:05.824 INFO [http-nio-500-exec-112] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:59:05.824 INFO [http-nio-500-exec-112] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:59:05.824 INFO [http-nio-500-exec-112] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:59:05.943 INFO [http-nio-500-exec-112] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 478 ms
+28-May-2018 21:59:05.945 INFO [http-nio-500-exec-112] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 21:59:05.983 INFO [http-nio-500-exec-109] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 21:59:05.984 INFO [http-nio-500-exec-109] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:59:05 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:59:06.022 INFO [http-nio-500-exec-109] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:59:05 ICT 2018]; root of context hierarchy
+28-May-2018 21:59:07.754 INFO [http-nio-500-exec-109] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 21:59:07.815 INFO [http-nio-500-exec-109] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 21:59:08.008 INFO [http-nio-500-exec-109] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 21:59:08 ICT 2018]; root of context hierarchy
+28-May-2018 21:59:08.079 INFO [http-nio-500-exec-109] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 21:59:08.159 INFO [http-nio-500-exec-109] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 344 ms
+28-May-2018 21:59:08.194 INFO [http-nio-500-exec-109] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 21:59:08.199 INFO [http-nio-500-exec-109] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:59:08 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 21:59:08.200 INFO [http-nio-500-exec-109] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 21:59:08.596 INFO [http-nio-500-exec-109] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 21:59:08.596 INFO [http-nio-500-exec-109] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 21:59:08.596 INFO [http-nio-500-exec-109] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 21:59:08.597 INFO [http-nio-500-exec-109] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 21:59:08.597 INFO [http-nio-500-exec-109] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 21:59:08.597 INFO [http-nio-500-exec-109] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 21:59:08.736 INFO [http-nio-500-exec-109] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 542 ms
+28-May-2018 21:59:08.739 INFO [http-nio-500-exec-109] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 22:00:12.639 INFO [http-nio-500-exec-122] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 22:00:12.642 INFO [http-nio-500-exec-122] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 21:59:08 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:00:12.683 INFO [http-nio-500-exec-122] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 21:59:08 ICT 2018]; root of context hierarchy
+28-May-2018 22:00:14.545 INFO [http-nio-500-exec-122] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 22:00:14.584 INFO [http-nio-500-exec-122] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 22:00:14.727 INFO [http-nio-500-exec-122] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 22:00:14 ICT 2018]; root of context hierarchy
+28-May-2018 22:00:14.802 INFO [http-nio-500-exec-122] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 22:00:14.886 INFO [http-nio-500-exec-122] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 302 ms
+28-May-2018 22:00:14.914 INFO [http-nio-500-exec-122] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 22:00:14.918 INFO [http-nio-500-exec-122] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 22:00:14 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:00:14.919 INFO [http-nio-500-exec-122] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 22:00:15.293 INFO [http-nio-500-exec-122] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 22:00:15.293 INFO [http-nio-500-exec-122] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 22:00:15.294 INFO [http-nio-500-exec-122] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 22:00:15.294 INFO [http-nio-500-exec-122] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 22:00:15.294 INFO [http-nio-500-exec-122] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 22:00:15.294 INFO [http-nio-500-exec-122] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 22:00:15.402 INFO [http-nio-500-exec-122] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 488 ms
+28-May-2018 22:00:15.405 INFO [http-nio-500-exec-122] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 22:05:34.651 INFO [http-nio-500-exec-125] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 22:05:34.653 INFO [http-nio-500-exec-125] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 22:00:14 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:05:34.690 INFO [http-nio-500-exec-125] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 22:00:14 ICT 2018]; root of context hierarchy
+28-May-2018 22:05:36.761 INFO [http-nio-500-exec-125] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 22:05:36.813 INFO [http-nio-500-exec-125] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 22:05:37.011 INFO [http-nio-500-exec-125] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 22:05:37 ICT 2018]; root of context hierarchy
+28-May-2018 22:05:37.087 INFO [http-nio-500-exec-125] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 22:05:37.182 INFO [http-nio-500-exec-125] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 369 ms
+28-May-2018 22:05:37.205 INFO [http-nio-500-exec-125] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 22:05:37.212 INFO [http-nio-500-exec-125] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 22:05:37 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:05:37.214 INFO [http-nio-500-exec-125] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 22:05:37.579 INFO [http-nio-500-exec-125] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 22:05:37.579 INFO [http-nio-500-exec-125] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 22:05:37.579 INFO [http-nio-500-exec-125] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 22:05:37.579 INFO [http-nio-500-exec-125] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 22:05:37.579 INFO [http-nio-500-exec-125] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 22:05:37.579 INFO [http-nio-500-exec-125] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 22:05:37.694 INFO [http-nio-500-exec-125] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 489 ms
+28-May-2018 22:05:37.697 INFO [http-nio-500-exec-125] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 22:08:21.938 INFO [http-nio-500-exec-134] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 22:08:21.941 INFO [http-nio-500-exec-134] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 22:05:37 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:08:21.988 INFO [http-nio-500-exec-134] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 22:05:37 ICT 2018]; root of context hierarchy
+28-May-2018 22:08:23.740 INFO [http-nio-500-exec-134] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 22:08:23.786 INFO [http-nio-500-exec-134] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 22:08:23.943 INFO [http-nio-500-exec-134] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 22:08:23 ICT 2018]; root of context hierarchy
+28-May-2018 22:08:24.019 INFO [http-nio-500-exec-134] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 22:08:24.110 INFO [http-nio-500-exec-134] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 324 ms
+28-May-2018 22:08:24.137 INFO [http-nio-500-exec-134] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 22:08:24.143 INFO [http-nio-500-exec-134] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 22:08:24 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:08:24.144 INFO [http-nio-500-exec-134] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 22:08:24.491 INFO [http-nio-500-exec-134] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 22:08:24.496 INFO [http-nio-500-exec-134] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 22:08:24.497 INFO [http-nio-500-exec-134] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 22:08:24.497 INFO [http-nio-500-exec-134] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 22:08:24.497 INFO [http-nio-500-exec-134] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 22:08:24.498 INFO [http-nio-500-exec-134] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 22:08:24.630 INFO [http-nio-500-exec-134] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 492 ms
+28-May-2018 22:08:24.633 INFO [http-nio-500-exec-134] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 22:08:40.717 INFO [http-nio-500-exec-127] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 22:08:40.720 INFO [http-nio-500-exec-127] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 22:08:24 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:08:40.755 INFO [http-nio-500-exec-127] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 22:08:23 ICT 2018]; root of context hierarchy
+28-May-2018 22:08:42.966 INFO [http-nio-500-exec-127] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 22:08:43.044 INFO [http-nio-500-exec-127] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 22:08:43.198 INFO [http-nio-500-exec-127] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 22:08:43 ICT 2018]; root of context hierarchy
+28-May-2018 22:08:43.275 INFO [http-nio-500-exec-127] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 22:08:43.364 INFO [http-nio-500-exec-127] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 319 ms
+28-May-2018 22:08:43.388 INFO [http-nio-500-exec-127] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 22:08:43.393 INFO [http-nio-500-exec-127] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 22:08:43 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:08:43.394 INFO [http-nio-500-exec-127] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 22:08:43.801 INFO [http-nio-500-exec-127] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 22:08:43.801 INFO [http-nio-500-exec-127] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 22:08:43.801 INFO [http-nio-500-exec-127] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 22:08:43.802 INFO [http-nio-500-exec-127] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 22:08:43.802 INFO [http-nio-500-exec-127] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 22:08:43.802 INFO [http-nio-500-exec-127] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 22:08:43.918 INFO [http-nio-500-exec-127] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 530 ms
+28-May-2018 22:08:43.921 INFO [http-nio-500-exec-127] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 22:08:54.990 INFO [http-nio-500-exec-140] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] has started
+28-May-2018 22:08:54.991 INFO [http-nio-500-exec-140] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 22:08:43 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:08:55.021 INFO [http-nio-500-exec-140] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 22:08:43 ICT 2018]; root of context hierarchy
+28-May-2018 22:08:57.277 INFO [http-nio-500-exec-140] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-May-2018 22:08:57.323 INFO [http-nio-500-exec-140] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-May-2018 22:08:57.457 INFO [http-nio-500-exec-140] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon May 28 22:08:57 ICT 2018]; root of context hierarchy
+28-May-2018 22:08:57.525 INFO [http-nio-500-exec-140] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+28-May-2018 22:08:57.600 INFO [http-nio-500-exec-140] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 277 ms
+28-May-2018 22:08:57.622 INFO [http-nio-500-exec-140] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+28-May-2018 22:08:57.627 INFO [http-nio-500-exec-140] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 22:08:57 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:08:57.628 INFO [http-nio-500-exec-140] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+28-May-2018 22:08:57.958 INFO [http-nio-500-exec-140] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index] onto handler 'homepageController'
+28-May-2018 22:08:57.958 INFO [http-nio-500-exec-140] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index.*] onto handler 'homepageController'
+28-May-2018 22:08:57.958 INFO [http-nio-500-exec-140] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/index/] onto handler 'homepageController'
+28-May-2018 22:08:57.958 INFO [http-nio-500-exec-140] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login] onto handler 'homepageController'
+28-May-2018 22:08:57.959 INFO [http-nio-500-exec-140] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login.*] onto handler 'homepageController'
+28-May-2018 22:08:57.959 INFO [http-nio-500-exec-140] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/home/login/] onto handler 'homepageController'
+28-May-2018 22:08:58.058 INFO [http-nio-500-exec-140] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 436 ms
+28-May-2018 22:08:58.064 INFO [http-nio-500-exec-140] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/springWebMvc] is completed
+28-May-2018 22:12:49.729 INFO [http-nio-500-exec-148] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon May 28 22:08:57 ICT 2018]; parent: Root WebApplicationContext
+28-May-2018 22:12:49.766 INFO [http-nio-500-exec-148] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon May 28 22:08:57 ICT 2018]; root of context hierarchy
+28-May-2018 22:12:50.274 INFO [http-nio-500-exec-148] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/springWebMvc]
+28-May-2018 22:13:00.851 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+28-May-2018 22:13:00.852 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-500"]
+28-May-2018 22:13:01.009 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 22:13:01.210 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+28-May-2018 22:13:01.294 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-500"]
+28-May-2018 22:13:01.296 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+28-May-2018 22:13:01.297 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-500"]
+28-May-2018 22:13:01.298 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
