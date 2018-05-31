@@ -43,7 +43,7 @@
                     <td>${item.productUnit}</td>
                     <td>${item.productPrice}</td>
                     <td>
-                        
+                        <a href="sell-product?productId=${item.productId}"><button type="button" class="btn btn-outline-primary">Sell</button></a>
                     </td>
                 </tr>
             </c:forEach>

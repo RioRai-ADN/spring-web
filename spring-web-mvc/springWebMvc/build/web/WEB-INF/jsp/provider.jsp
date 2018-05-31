@@ -30,15 +30,16 @@
                     </tr>
                 </thead>
                 <tbody>
+                <% int i = 0;%>
                 <c:forEach var="item" items="${providerList}">
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row"><%=i++%></th>
                         <td>${item.providerId}</td>
                         <td>${item.providerName}</td>
                         <td>
-                            <button type="button" class="btn btn-outline-dark">View Products Supplier</button>
-                            <button type="button" class="btn btn-outline-info">Detail</button>
-                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                            <a href="product-supplier?providerId=${item.providerId}"><button type="button" class="btn btn-outline-dark">View Products Supplier</button></a>
+                            <!--<button type="button" class="btn btn-outline-info">Detail</button>
+                            <button type="button" class="btn btn-outline-danger">Delete</button>-->
                         </td>
                     </tr>
                 </c:forEach>

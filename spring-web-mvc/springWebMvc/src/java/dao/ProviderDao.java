@@ -7,6 +7,7 @@ package dao;
 
 import entity.Provider;
 import java.util.ArrayList;
+import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -19,7 +20,7 @@ import util.HibernateUtil;
 public class ProviderDao {
 
     /**
-     * lay toan bo danh sach san pham
+     * lay toan bo danh sach nha cung cap
      *
      * @return
      */
@@ -54,8 +55,26 @@ public class ProviderDao {
         return false;
     }
 
+    /**
+     * lay ten nha cung cap theo ma nha cung cap
+     * @param providerId
+     * @return 
+     */
+    public ArrayList<Provider> getProviderBy(String providerId) {
+    
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        Transaction transaction = session.beginTransaction();
+        Query query = session.createQuery("from provider where providerId = :providerId");
+        query.setString("providerId", providerId);
+        
+        ArrayList<Provider> provider = (ArrayList<Provider>) query.list();
+        transaction.commit();
+        
+        return provider;
+    }
+    
     public static void main(String args[]) {
 
-        System.out.println(new ProviderDao().getAllProvider());
+        System.out.println(new ProviderDao().getProviderBy("ss").get(0).getProviderName());
     }
 }

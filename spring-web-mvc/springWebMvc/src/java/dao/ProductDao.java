@@ -72,6 +72,43 @@ public class ProductDao {
         return product;
     }
     
+    /**
+     * lay danh sach san pham theo nha cung cap
+     * @param providerId
+     * @return 
+     */
+    public ArrayList<Product> getProductListBy(String providerId) {
+    
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        Transaction transaction = session.beginTransaction();
+        Query query = session.createQuery("from product where providerId = :providerId");
+        query.setString("providerId", providerId);
+        
+        ArrayList<Product> productList = (ArrayList<Product>) query.list();
+        transaction.commit();
+        
+        return productList;
+    }
+    
+    /**
+     * cap nhat san pham
+     * @param product
+     * @return 
+     */
+    public boolean updateProduct(Product product) {
+    
+        try {
+            Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+            Transaction transaction = session.beginTransaction();
+            session.update(product);
+            transaction.commit();
+            
+            return true;
+        } catch (Exception e) {
+        }
+        
+        return false;
+    }
     public static void main(String args[]) {
 
         System.out.println(new ProductDao().getProductBy("IPW").get(0).getProductName());

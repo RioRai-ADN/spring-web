@@ -4,6 +4,7 @@
     Author     : Rio.Rai
 --%>
 
+<%@page import="dao.ProviderDao"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -13,6 +14,7 @@
         <title>Product Page</title>
     </head>
     <body>
+
         <jsp:include page="header.jsp"></jsp:include>
             <h2 style="margin-left: 600px">Products</h2>
 
@@ -22,14 +24,15 @@
                         <th scope="col">#</th>
                         <th scope="col">Product_ID</th>
                         <th scope="col">Product_NAME</th>
-                        <th scope="col">Provider_NAME</th>
+                        <th scope="col">Provider_ID</th>
                         <th scope="col">Feature</th>
                     </tr>
                 </thead>
                 <tbody>
+                <% int i = 0;%>
                 <c:forEach var="item" items="${productList}">
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row"><%=i++%></th>
                         <td>${item.productId}</td>
                         <td>${item.productName}</td>
                         <td>${item.providerId}</td>

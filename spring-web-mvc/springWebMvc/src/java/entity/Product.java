@@ -21,7 +21,7 @@ public class Product {
     
     private String productName;
     
-    private String productQuantity;//so luong cung la so hang ton kho
+    private int productQuantity;//so luong cung la so hang ton kho
     
     private double productPrice;
     
@@ -32,7 +32,7 @@ public class Product {
     public Product() {
     }
 
-    public Product(String productId, String productName, String productQuantity, double productPrice, String productUnit, String providerId) {
+    public Product(String productId, String productName, int productQuantity, double productPrice, String productUnit, String providerId) {
         this.productId = productId;
         this.productName = productName;
         this.productQuantity = productQuantity;
@@ -57,11 +57,11 @@ public class Product {
         this.productName = productName;
     }
 
-    public String getProductQuantity() {
+    public int getProductQuantity() {
         return productQuantity;
     }
 
-    public void setProductQuantity(String productQuantity) {
+    public void setProductQuantity(int productQuantity) {
         this.productQuantity = productQuantity;
     }
 

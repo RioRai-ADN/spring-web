@@ -33,7 +33,7 @@
             <!--Product Name(String)-->
             <div class="form-group">
                 <label for="exampleFormControlInput1">Product Name</label>
-                <input type="text" name="productName" class="form-control" id="exampleFormControlInput1" placeholder="Gears Frontier S3">
+                <input type="text" name="productName" class="form-control" id="exampleFormControlInput1" placeholder="Example: Gears Frontier S3">
             </div>
 
             <!--Provider selection (loadProviderList)-->
